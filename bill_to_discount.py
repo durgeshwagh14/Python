@@ -1,4 +1,4 @@
-income_str = input("Enter Your Income :")
+income = int(input("Enter Your Income :"))
 bill = float(input("Enter Your Bill :"))
 discount = 0
 
