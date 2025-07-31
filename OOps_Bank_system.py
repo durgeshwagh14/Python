@@ -1,5 +1,6 @@
 import random
 import string
+import getpass
 
 def generateOTP(length=6):
     characters = string.digits + string.ascii_uppercase + string.ascii_lowercase
@@ -48,18 +49,18 @@ def banking_menu(account):
         if choice == '1':
                 amount = int(input("Enter amount to credit: ₹"))
                 account.credit(amount)
-                print("❌ Invalid amount. Please enter a number.")
+                # Removed the redundant invalid amount print which was always printing after the credit
         elif choice == '2':
                 amount = int(input("Enter amount to debit: ₹"))
                 account.debit(amount)
-                print("❌ Invalid amount. Please enter a number.")
+                # Removed the redundant invalid amount print which was always printing after the debit
         elif choice == '3':
             print("🙏 Thank you! Exiting...")
             break
         else:
             print("❌ Invalid option. Try again.")
 
-# Main program 
+# Main program
 
 bank = Bank()
 
@@ -88,7 +89,7 @@ while True:
     choice = input("Choose an option (1 or 2): ")
 
     if choice == '1':
-        pin = input("Enter your 4-digit PIN: ")
+        pin = getpass.getpass("Enter your password: ")
         if pin == '1234':
             print("✅ PIN Verified Successfully!")
             banking_menu(user_account)
