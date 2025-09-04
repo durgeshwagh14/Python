@@ -9,10 +9,10 @@
 - ✅ Loops
 - ✅ Functions
 - ✅ Strings and Lists
-- ⏳ Dictionaries, Sets, Tuples
-- ⏳ File Handling
-- ⏳ Object-Oriented Programming (OOP)
-- ⏳ Modules & Libraries (e.g. `math`, `random`)
+- ✅ Dictionaries, Sets, Tuples
+- ✅ File Handling
+- ✅ Object-Oriented Programming (OOP)
+- ✅ Modules & Libraries (e.g. `math`, `random`)
 - ⏳ Problem Solving (e.g. LeetCode, HackerRank)
 
 > 📌 Topics will be updated as practice progresses.
